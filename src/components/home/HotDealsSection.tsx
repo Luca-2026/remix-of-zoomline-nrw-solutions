@@ -31,12 +31,12 @@ function HotDealCard({ deal }: { deal: HotDeal }) {
       <div className="aspect-[4/3] bg-muted relative overflow-hidden">
         <img
           src={deal.image}
-          alt={`Zoomlion ${deal.name} ${deal.type === "bagger" ? "Minibagger" : "Arbeitsbühne"} kaufen - ${deal.highlight} - Sonderangebot NRW`}
+          alt={`Zoomlion ${deal.name} Arbeitsbühne kaufen - ${deal.highlight} - Sonderangebot NRW`}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
         <div className="absolute top-3 left-3">
           <span className="inline-flex items-center rounded-md bg-primary/90 px-2.5 py-1 text-xs font-medium text-primary-foreground">
-            {deal.type === "bagger" ? "Minibagger" : "Arbeitsbühne"}
+            Arbeitsbühne
           </span>
         </div>
       </div>
@@ -124,7 +124,7 @@ export function HotDealsSection() {
           <Flame className="h-8 w-8 text-destructive animate-pulse" />
           <SectionHeading
             title="Hot Deals"
-            subtitle="Limitierte Sonderangebote – Jetzt zugreifen!"
+            subtitle="Limitierte Sonderangebote für Arbeitsbühnen – Jetzt zugreifen!"
             align="center"
           />
           <Flame className="h-8 w-8 text-destructive animate-pulse" />

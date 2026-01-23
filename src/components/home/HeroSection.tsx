@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Flame } from "lucide-react";
 import heroGrafik from "@/assets/hero-grafik.jpg";
 import iconArbeitsbuehne from "@/assets/icons/icon-arbeitsbuehne.png";
-import iconBagger from "@/assets/icons/icon-bagger.png";
 
 export function HeroSection() {
   return (
@@ -12,7 +11,7 @@ export function HeroSection() {
       <div className="absolute inset-0">
         <img 
           src={heroGrafik} 
-          alt="Zoomlion Arbeitsbühnen und Minibagger kaufen in NRW - Scherenarbeitsbühnen, Teleskopbühnen und Kompaktbagger vom Top 5 Hersteller weltweit" 
+          alt="Arbeitsbühne kaufen NRW - Scherenarbeitsbühnen, Teleskopbühnen und Gelenkbühnen vom Top 5 Hersteller weltweit" 
           className="w-full h-full object-cover object-center"
         />
         {/* Gradient Overlay for better text readability */}
@@ -33,12 +32,12 @@ export function HeroSection() {
             </div>
 
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight animate-fade-in-up opacity-0" style={{ animationDelay: '0.2s' }}>
-              Arbeitsbühnen & Bagger
-              <span className="block text-primary mt-2">für Profis in NRW</span>
+              Arbeitsbühne kaufen
+              <span className="block text-primary mt-2">in Nordrhein-Westfalen</span>
             </h1>
 
             <p className="mt-6 text-lg md:text-xl text-white/90 max-w-xl mx-auto lg:mx-0 animate-fade-in-up opacity-0" style={{ animationDelay: '0.3s' }}>
-              3 Standorte in Nordrhein-Westfalen – Beratung, Ersatzteile & Service. 
+              Scherenarbeitsbühnen, Teleskopbühnen & Gelenkbühnen – 3 Standorte in NRW. 
               Mit 3 Jahren Garantie und Ersatzteilen vor Ort.
             </p>
 
@@ -61,13 +60,9 @@ export function HeroSection() {
                 variant="outline"
                 className="border-white/30 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:text-white transition-all duration-300 group"
               >
-                <Link to="/bagger" className="flex items-center">
-                  <img 
-                    src={iconBagger} 
-                    alt="Bagger" 
-                    className="mr-3 h-8 w-8 object-contain" 
-                  />
-                  Bagger finden
+                <Link to="/hot-deals" className="flex items-center">
+                  <Flame className="mr-2 h-5 w-5 text-destructive" />
+                  Hot Deals ansehen
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 opacity-0 group-hover:opacity-100" />
                 </Link>
               </Button>

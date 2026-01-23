@@ -2,24 +2,23 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import iconArbeitsbuehne from "@/assets/icons/icon-arbeitsbuehne.png";
-import iconBagger from "@/assets/icons/icon-bagger.png";
 
 const categories = [
   {
-    id: "arbeitsbuehnen",
-    title: "Arbeitsbühnen",
-    description: "Scheren-, Gelenk- und Teleskopbühnen für jeden Einsatz. Elektrisch, Diesel oder Hybrid.",
+    id: "scherenbuehnen",
+    title: "Scherenarbeitsbühnen",
+    description: "Kompakte Scherenarbeitsbühnen für Indoor- und Outdoor-Einsätze. Elektrisch oder mit Lithium-Ionen-Akku.",
     icon: iconArbeitsbuehne,
     href: "/arbeitsbuehnen",
-    features: ["Scherenarbeitsbühnen", "Gelenkteleskopbühnen", "Mastbühnen", "Anhängerbühnen"]
+    features: ["Indoor AC/Li", "Outdoor Diesel", "Raupen-Scheren", "Micro-Scheren"]
   },
   {
-    id: "bagger",
-    title: "Bagger",
-    description: "Mini- und Kompaktbagger für Tiefbau, GaLaBau, Abbruch und universelle Einsätze.",
-    icon: iconBagger,
-    href: "/bagger",
-    features: ["Minibagger 1-3t", "Kompaktbagger 3-8t", "Elektrobagger", "Abbruchbagger"]
+    id: "teleskopbuehnen",
+    title: "Teleskop- & Gelenkbühnen",
+    description: "Maximale Reichweite und Flexibilität für anspruchsvolle Höhenarbeiten bis 68 Meter.",
+    icon: iconArbeitsbuehne,
+    href: "/arbeitsbuehnen",
+    features: ["Gelenkteleskopbühnen", "Teleskopbühnen", "Anhängerbühnen", "Mastbühnen"]
   }
 ];
 
@@ -29,8 +28,8 @@ export function ProductCategories() {
       <div className="container mx-auto px-4">
         <SectionHeading
           badge="Produktkategorien"
-          title="Finden Sie die passende Maschine"
-          subtitle="Nutzen Sie unsere Konfiguratoren für eine schnelle und einfache Auswahl"
+          title="Finden Sie die passende Arbeitsbühne"
+          subtitle="Nutzen Sie unseren Konfigurator für eine schnelle und einfache Auswahl"
         />
 
         <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
@@ -44,7 +43,7 @@ export function ProductCategories() {
               <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-xl bg-muted overflow-hidden transition-colors group-hover:bg-primary/10">
                 <img 
                   src={category.icon} 
-                  alt={`${category.title} kaufen bei Zoomlion NRW - ${category.features.join(", ")}`}
+                  alt={`${category.title} kaufen in NRW - ${category.features.join(", ")}`}
                   className="h-14 w-14 object-contain"
                 />
               </div>

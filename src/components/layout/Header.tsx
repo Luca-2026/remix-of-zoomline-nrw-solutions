@@ -9,7 +9,6 @@ const navigation = [
   { name: "Startseite", href: "/" },
   { name: "Hot Deals", href: "/hot-deals", highlight: true },
   { name: "Arbeitsbühnen", href: "/arbeitsbuehnen" },
-  { name: "Bagger", href: "/bagger" },
   { name: "Finanzierung", href: "/finanzierung" },
   { name: "Service", href: "/service" },
   { name: "Standorte", href: "/standorte" },
@@ -27,7 +26,7 @@ export function Header() {
         <Link to="/" className="flex items-center">
           <img 
             src={logoImage} 
-            alt="Zoomlion NRW - Fachhändler für Arbeitsbühnen und Bagger in Nordrhein-Westfalen" 
+            alt="Arbeitsbühne kaufen NRW - Fachhändler für Scherenarbeitsbühnen, Teleskopbühnen und Gelenkbühnen" 
             className="h-10 md:h-12 w-auto"
           />
         </Link>
