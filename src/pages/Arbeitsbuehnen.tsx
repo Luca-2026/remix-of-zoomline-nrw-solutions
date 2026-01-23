@@ -12,13 +12,13 @@ const Arbeitsbuehnen = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Start",
-        "item": "https://www.zoomlion-nrw.de/"
+        "item": "https://www.arbeitsbuehne-kaufen-nrw.de/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Arbeitsbühnen kaufen",
-        "item": "https://www.zoomlion-nrw.de/arbeitsbuehnen"
+        "item": "https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehnen"
       }
     ]
   };
@@ -34,19 +34,19 @@ const Arbeitsbuehnen = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Scherenarbeitsbühnen",
-        "url": "https://www.zoomlion-nrw.de/arbeitsbuehnen#scheren"
+        "url": "https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehnen#scheren"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Gelenkteleskopbühnen",
-        "url": "https://www.zoomlion-nrw.de/arbeitsbuehnen#gelenk"
+        "url": "https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehnen#gelenk"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Teleskopbühnen",
-        "url": "https://www.zoomlion-nrw.de/arbeitsbuehnen#teleskop"
+        "url": "https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehnen#teleskop"
       }
     ]
   };
@@ -67,12 +67,12 @@ const Arbeitsbuehnen = () => {
           name="keywords" 
           content="Arbeitsbühne kaufen NRW, Scherenarbeitsbühne kaufen, Hubarbeitsbühne kaufen NRW, Hebebühne kaufen, Teleskopbühne kaufen, Gelenkbühne kaufen, Steiger kaufen NRW, Arbeitsbühne kaufen Köln, Arbeitsbühne kaufen Düsseldorf, Arbeitsbühne finanzieren, Zoomlion Arbeitsbühne" 
         />
-        <link rel="canonical" href="https://www.zoomlion-nrw.de/arbeitsbuehnen" />
+        <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehnen" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Arbeitsbühne kaufen NRW | Zoomlion Hebebühnen" />
         <meta property="og:description" content="Arbeitsbühnen kaufen in NRW beim exklusiven Zoomlion Fachhändler. Scherenarbeitsbühnen, Teleskopbühnen bis 68m, mit 3 Jahren Garantie." />
-        <meta property="og:url" content="https://www.zoomlion-nrw.de/arbeitsbuehnen" />
+        <meta property="og:url" content="https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehnen" />
         <meta property="og:type" content="website" />
         
         {/* Structured Data */}

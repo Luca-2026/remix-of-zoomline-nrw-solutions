@@ -40,23 +40,10 @@ const faqData = [
       {
         question: "Welche Arbeitsbühne eignet sich für Innenräume?",
         answer: "Für Innenräume empfehlen wir elektrische Scherenarbeitsbühnen der AC-Serie oder die kompakten Micro-Scherenarbeitsbühnen. Diese sind emissionsfrei, leise und haben eine geringe Bodenbelastung."
-      }
-    ]
-  },
-  {
-    category: "Bagger",
-    questions: [
-      {
-        question: "Welche Bagger bietet Zoomlion an?",
-        answer: "Zoomlion bietet Bagger von 1,8 Tonnen (Minibagger) bis über 21 Tonnen (Kettenbagger). Das Programm umfasst Minibagger, Kompaktbagger und Kettenbagger für verschiedene Einsatzbereiche im Tief-, Straßen- und Landschaftsbau."
       },
       {
-        question: "Sind Ersatzteile für Zoomlion Bagger verfügbar?",
-        answer: "Ja, wir halten alle gängigen Ersatzteile an unseren drei NRW-Standorten in Bonn, Krefeld und Mülheim vorrätig. Dadurch garantieren wir kurze Lieferzeiten und minimale Stillstandzeiten für Ihre Maschinen."
-      },
-      {
-        question: "Welcher Zoomlion Bagger eignet sich für den GaLaBau?",
-        answer: "Für den Garten- und Landschaftsbau empfehlen wir Minibagger wie den ZE18GU oder ZE36GU. Diese sind kompakt, wendig und haben eine geringe Bodenbelastung – ideal für empfindliche Rasenflächen und enge Zugänge."
+        question: "Welche Arbeitshöhen sind verfügbar?",
+        answer: "Unsere Arbeitsbühnen decken Arbeitshöhen von 6 Metern (kompakte Scherenarbeitsbühnen) bis zu 68 Metern (Teleskopbühnen) ab. So finden Sie die passende Lösung für jedes Projekt."
       }
     ]
   },
@@ -64,20 +51,24 @@ const faqData = [
     category: "Kauf & Service",
     questions: [
       {
-        question: "Wo kann ich Zoomlion Maschinen in NRW kaufen?",
-        answer: "Zoomlion NRW ist der exklusive Fachhändler für Zoomlion Arbeitsbühnen und Bagger in Nordrhein-Westfalen. Wir haben drei Standorte: Bonn (Drachenburgstraße 8), Krefeld (Anrather Straße 291) und Mülheim an der Ruhr."
+        question: "Wo kann ich Arbeitsbühnen in NRW kaufen?",
+        answer: "Wir sind der exklusive Fachhändler für Zoomlion Arbeitsbühnen in Nordrhein-Westfalen. Wir haben drei Standorte: Bonn (Drachenburgstraße 8), Krefeld (Anrather Straße 291) und Mülheim an der Ruhr."
       },
       {
-        question: "Wie lange ist die Garantie auf Zoomlion Maschinen?",
-        answer: "Alle Zoomlion Maschinen haben eine Garantie von 3 Jahren oder 3.000 Betriebsstunden – je nachdem, was zuerst erreicht wird. Dies gibt Ihnen Sicherheit und zeigt das Vertrauen in die Qualität der Produkte."
+        question: "Wie lange ist die Garantie auf Zoomlion Arbeitsbühnen?",
+        answer: "Alle Zoomlion Arbeitsbühnen haben eine Garantie von 3 Jahren oder 3.000 Betriebsstunden – je nachdem, was zuerst erreicht wird. Dies gibt Ihnen Sicherheit und zeigt das Vertrauen in die Qualität der Produkte."
       },
       {
-        question: "Bietet Zoomlion NRW auch Finanzierung an?",
-        answer: "Ja, wir bieten verschiedene Finanzierungsoptionen für den Kauf von Zoomlion Maschinen. Sprechen Sie uns an – wir finden die passende Lösung für Ihr Budget und Ihre Anforderungen."
+        question: "Bieten Sie auch Finanzierung an?",
+        answer: "Ja, wir bieten verschiedene Finanzierungsoptionen für den Kauf von Arbeitsbühnen. Nutzen Sie unseren Online-Finanzierungsrechner oder sprechen Sie uns an – wir finden die passende Lösung für Ihr Budget."
       },
       {
-        question: "Wie erreiche ich den Zoomlion NRW Service?",
+        question: "Wie erreiche ich den Service?",
         answer: "Sie erreichen uns telefonisch in Bonn unter 0228 50466061 und in Krefeld unter 02151 4179904. Per E-Mail sind wir unter verkauf@zoomlion-nrw.de erreichbar. Unser Service-Team steht Ihnen für Beratung, Reparaturen und Ersatzteile zur Verfügung."
+      },
+      {
+        question: "Sind Ersatzteile für Zoomlion Arbeitsbühnen verfügbar?",
+        answer: "Ja, wir halten alle gängigen Ersatzteile an unseren drei NRW-Standorten in Bonn, Krefeld und Mülheim vorrätig. Dadurch garantieren wir kurze Lieferzeiten und minimale Stillstandzeiten für Ihre Maschinen."
       }
     ]
   }
@@ -109,16 +100,21 @@ const FAQ = () => {
   return (
     <Layout>
       <Helmet>
-        <title>FAQ - Häufige Fragen zu Zoomlion Baumaschinen | Zoomlion NRW</title>
+        <title>FAQ - Häufige Fragen zu Arbeitsbühnen | Arbeitsbühne kaufen NRW</title>
         <meta 
           name="description" 
-          content="Häufig gestellte Fragen zu Zoomlion Arbeitsbühnen und Baggern. Erfahren Sie alles über Kauf, Service, Garantie und Ersatzteile bei Ihrem Fachhändler in NRW." 
+          content="Häufig gestellte Fragen zu Arbeitsbühnen kaufen in NRW. Erfahren Sie alles über Kauf, Service, Garantie und Ersatzteile für Scherenarbeitsbühnen, Teleskopbühnen und Gelenkbühnen." 
         />
         <meta 
           name="keywords" 
-          content="Zoomlion FAQ, Arbeitsbühnen Fragen, Bagger kaufen NRW, Zoomlion Garantie, Baumaschinen Service, Zoomlion Ersatzteile" 
+          content="Arbeitsbühne kaufen FAQ, Scherenarbeitsbühne Fragen, Hubarbeitsbühne kaufen NRW, Zoomlion Garantie, Arbeitsbühne Service, Teleskopbühne Ersatzteile" 
         />
-        <link rel="canonical" href="https://zoomlion-nrw.de/faq" />
+        <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/faq" />
+        
+        <meta property="og:title" content="FAQ - Häufige Fragen zu Arbeitsbühnen kaufen NRW" />
+        <meta property="og:description" content="Antworten auf häufige Fragen zum Kauf von Arbeitsbühnen in Nordrhein-Westfalen." />
+        <meta property="og:url" content="https://www.arbeitsbuehne-kaufen-nrw.de/faq" />
+        
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>
@@ -129,7 +125,7 @@ const FAQ = () => {
           <SectionHeading
             badge="FAQ"
             title="Häufig gestellte Fragen"
-            subtitle="Alles, was Sie über Zoomlion Arbeitsbühnen und Bagger wissen müssen"
+            subtitle="Alles, was Sie über den Kauf von Arbeitsbühnen wissen müssen"
           />
 
           <div className="max-w-3xl mx-auto space-y-8">
@@ -161,13 +157,13 @@ const FAQ = () => {
           {/* Additional SEO content */}
           <div className="max-w-3xl mx-auto mt-16 prose prose-lg">
             <h2 className="font-heading text-2xl font-bold mb-4">
-              Zoomlion – Ein globaler Marktführer für Baumaschinen
+              Zoomlion – Weltweit führend bei Arbeitsbühnen
             </h2>
             <p className="text-muted-foreground">
               Zoomlion Heavy Industry Science & Technology Co., Ltd. wurde 1992 in China gegründet und hat sich 
-              zu einem der weltweit führenden Hersteller von Baumaschinen entwickelt. Mit einem Jahresumsatz von 
+              zu einem der weltweit führenden Hersteller von Arbeitsbühnen entwickelt. Mit einem Jahresumsatz von 
               über 9,45 Milliarden US-Dollar (2020) und einem globalen Marktanteil von etwa 4,9% gehört Zoomlion 
-              zu den Top 5 der Branche – gleichauf mit Marken wie Caterpillar, Komatsu und Liebherr.
+              zu den Top 5 der Branche – gleichauf mit Marken wie JLG, Genie und Haulotte.
             </p>
             <p className="text-muted-foreground">
               Das Unternehmen beschäftigt rund 19.000 Mitarbeiter und ist an der Hongkonger Börse notiert. 

@@ -62,24 +62,24 @@ const Finanzierung = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Minibagger & Arbeitsbühne finanzieren NRW | Zoomlion Finanzierungsrechner</title>
+        <title>Arbeitsbühne finanzieren NRW | Finanzierungsrechner</title>
         <meta 
           name="title" 
-          content="Minibagger & Arbeitsbühne finanzieren NRW | Zoomlion Finanzierungsrechner" 
+          content="Arbeitsbühne finanzieren NRW | Finanzierungsrechner" 
         />
         <meta 
           name="description" 
-          content="Minibagger oder Arbeitsbühne finanzieren ➤ Online-Rechner für monatliche Rate ✓ Flexible Laufzeiten 12-48 Monate ✓ Attraktive B2B-Konditionen ✓ Baumaschinen Leasing NRW. Jetzt berechnen!" 
+          content="Arbeitsbühne finanzieren ➤ Online-Rechner für monatliche Rate ✓ Flexible Laufzeiten 12-48 Monate ✓ Attraktive B2B-Konditionen ✓ Arbeitsbühnen Leasing NRW. Jetzt berechnen!" 
         />
         <meta 
           name="keywords" 
-          content="Minibagger finanzieren, Arbeitsbühne finanzieren, Baumaschinen Leasing NRW, Bagger Finanzierung, Arbeitsbühne Leasing, Baumaschinen Ratenkauf, Zoomlion Finanzierung" 
+          content="Arbeitsbühne finanzieren, Scherenarbeitsbühne Leasing, Hubarbeitsbühne Finanzierung NRW, Teleskopbühne Ratenkauf, Arbeitsbühne Leasing, Hebebühne finanzieren" 
         />
-        <link rel="canonical" href="https://www.zoomlion-nrw.de/finanzierung" />
+        <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/finanzierung" />
         
-        <meta property="og:title" content="Baumaschinen finanzieren – Zoomlion Finanzierungsrechner" />
-        <meta property="og:description" content="Berechnen Sie Ihre monatliche Rate für Minibagger und Arbeitsbühnen. Flexible B2B-Konditionen." />
-        <meta property="og:url" content="https://www.zoomlion-nrw.de/finanzierung" />
+        <meta property="og:title" content="Arbeitsbühne finanzieren – Finanzierungsrechner" />
+        <meta property="og:description" content="Berechnen Sie Ihre monatliche Rate für Arbeitsbühnen. Flexible B2B-Konditionen." />
+        <meta property="og:url" content="https://www.arbeitsbuehne-kaufen-nrw.de/finanzierung" />
       </Helmet>
 
       <section className="py-16 md:py-24">
