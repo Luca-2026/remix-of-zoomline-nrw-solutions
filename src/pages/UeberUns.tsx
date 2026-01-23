@@ -7,12 +7,12 @@ const UeberUns = () => {
   const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "Über Zoomlion NRW",
-    "description": "Exklusiver Fachhändler für Zoomlion Minibagger und Arbeitsbühnen in Nordrhein-Westfalen",
-    "url": "https://www.zoomlion-nrw.de/ueber-uns",
+    "name": "Über uns - Arbeitsbühne kaufen NRW",
+    "description": "Exklusiver Zoomlion Fachhändler für Arbeitsbühnen in Nordrhein-Westfalen",
+    "url": "https://www.arbeitsbuehne-kaufen-nrw.de/ueber-uns",
     "mainEntity": {
       "@type": "Organization",
-      "name": "Zoomlion NRW",
+      "name": "Arbeitsbühne kaufen NRW",
       "legalName": "SLT Technology Group GmbH & Co. KG",
       "foundingDate": "2020",
       "areaServed": "Nordrhein-Westfalen"
@@ -22,24 +22,24 @@ const UeberUns = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Über uns – Zoomlion Fachhändler NRW | SLT Technology Group</title>
+        <title>Über uns – Zoomlion Fachhändler für Arbeitsbühnen NRW</title>
         <meta 
           name="title" 
-          content="Über uns – Zoomlion Fachhändler NRW | SLT Technology Group" 
+          content="Über uns – Zoomlion Fachhändler für Arbeitsbühnen NRW" 
         />
         <meta 
           name="description" 
-          content="Zoomlion NRW ist Ihr exklusiver Fachhändler für Minibagger & Arbeitsbühnen in Nordrhein-Westfalen. ➤ 3 Standorte ✓ Erfahrenes Team ✓ Service vor Ort. Teil der SLT Technology Group." 
+          content="Ihr exklusiver Fachhändler für Arbeitsbühnen in Nordrhein-Westfalen ➤ 3 Standorte ✓ Erfahrenes Team ✓ Ersatzteile vor Ort ✓ Service & Beratung. Teil der SLT Technology Group." 
         />
         <meta 
           name="keywords" 
-          content="Zoomlion NRW, SLT Technology Group, Zoomlion Händler Deutschland, Baumaschinen Fachhändler NRW, Zoomlion Partner, Baumaschinen Experte" 
+          content="Arbeitsbühne kaufen NRW Fachhändler, Zoomlion Händler Deutschland, Scherenarbeitsbühne Händler NRW, SLT Technology Group, Hubarbeitsbühne Experte" 
         />
-        <link rel="canonical" href="https://www.zoomlion-nrw.de/ueber-uns" />
+        <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/ueber-uns" />
         
-        <meta property="og:title" content="Über Zoomlion NRW – Ihr Baumaschinen-Partner" />
-        <meta property="og:description" content="Exklusiver Zoomlion Fachhändler in NRW mit 3 Standorten und erfahrenem Team." />
-        <meta property="og:url" content="https://www.zoomlion-nrw.de/ueber-uns" />
+        <meta property="og:title" content="Über uns – Arbeitsbühne kaufen NRW" />
+        <meta property="og:description" content="Exklusiver Zoomlion Fachhändler für Arbeitsbühnen in NRW mit 3 Standorten." />
+        <meta property="og:url" content="https://www.arbeitsbuehne-kaufen-nrw.de/ueber-uns" />
         
         <script type="application/ld+json">
           {JSON.stringify(aboutSchema)}
@@ -50,27 +50,27 @@ const UeberUns = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <SectionHeading
             badge="Über uns"
-            title="Zoomlion NRW – Ihr Partner für Baumaschinen"
-            subtitle="Exklusiver Fachhändler für Zoomlion Minibagger und Arbeitsbühnen in Nordrhein-Westfalen"
+            title="Ihr Partner für Arbeitsbühnen in NRW"
+            subtitle="Exklusiver Zoomlion Fachhändler für Scherenarbeitsbühnen, Teleskopbühnen und Gelenkbühnen"
           />
           <div className="prose prose-lg max-w-none mb-12">
             <p>
-              <strong>Zoomlion NRW</strong> ist Ihr exklusiver Ansprechpartner für <strong>Zoomlion Minibagger</strong> und 
+              Als exklusiver <strong>Zoomlion Fachhändler</strong> sind wir Ihr Ansprechpartner für 
               <strong> Arbeitsbühnen kaufen</strong> in Nordrhein-Westfalen. Mit drei Standorten in Bonn, Krefeld und 
               Mülheim an der Ruhr sind wir immer in Ihrer Nähe.
             </p>
             <p>
               Als Teil der <strong>SLT Technology Group GmbH & Co. KG</strong> verbinden wir langjährige Erfahrung 
-              im Baumaschinenhandel mit modernem Service und kompetenter Beratung. Unser Ziel: Ihnen beim 
-              <strong> Baumaschinen kaufen in NRW</strong> die beste Lösung zu bieten.
+              im Maschinenhandel mit modernem Service und kompetenter Beratung. Unser Ziel: Ihnen beim 
+              Kauf von <strong>Scherenarbeitsbühnen, Teleskopbühnen und Gelenkbühnen</strong> die beste Lösung zu bieten.
             </p>
-            <h2 className="font-heading text-2xl font-bold mt-8 mb-4">Warum Zoomlion NRW?</h2>
+            <h2 className="font-heading text-2xl font-bold mt-8 mb-4">Warum Arbeitsbühnen bei uns kaufen?</h2>
             <ul>
-              <li><strong>Top 5 Hersteller weltweit:</strong> Zoomlion gehört zu den größten Baumaschinenherstellern der Welt</li>
+              <li><strong>Top 5 Hersteller weltweit:</strong> Zoomlion gehört zu den größten Arbeitsbühnenherstellern der Welt</li>
               <li><strong>3 Jahre Garantie:</strong> Umfassender Schutz für Ihre Investition</li>
               <li><strong>Ersatzteile vor Ort:</strong> Schnelle Verfügbarkeit an allen Standorten</li>
               <li><strong>Flexible Finanzierung:</strong> Attraktive Konditionen für Ihr Budget</li>
-              <li><strong>Kompetente Beratung:</strong> Erfahrene Experten für Minibagger und Arbeitsbühnen</li>
+              <li><strong>Kompetente Beratung:</strong> Erfahrene Experten für Arbeitsbühnen aller Art</li>
             </ul>
           </div>
           <TrustBadges />

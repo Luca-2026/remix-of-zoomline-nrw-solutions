@@ -1,8 +1,15 @@
+import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const Datenschutz = () => (
   <Layout>
+    <Helmet>
+      <title>Datenschutzerklärung | Arbeitsbühne kaufen NRW</title>
+      <meta name="description" content="Datenschutzerklärung von Arbeitsbühne kaufen NRW. Informationen zum Schutz Ihrer personenbezogenen Daten." />
+      <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/datenschutz" />
+      <meta name="robots" content="noindex, follow" />
+    </Helmet>
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4 max-w-3xl">
         <SectionHeading

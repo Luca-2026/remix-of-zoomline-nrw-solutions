@@ -58,8 +58,24 @@ const Service = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Service & Ersatzteile | Zoomlion NRW</title>
-        <meta name="description" content="Professioneller Service für Arbeitsbühnen und Bagger in NRW: Ersatzteile, Wartung, Reparatur, UVV-Prüfung und Wartungsverträge. 3 Standorte in NRW." />
+        <title>Service & Ersatzteile für Arbeitsbühnen NRW | Wartung & Reparatur</title>
+        <meta 
+          name="title" 
+          content="Service & Ersatzteile für Arbeitsbühnen NRW | Wartung & Reparatur" 
+        />
+        <meta 
+          name="description" 
+          content="Professioneller Service für Arbeitsbühnen in NRW ➤ Ersatzteile vor Ort ✓ Wartung & Reparatur ✓ UVV-Prüfung ✓ Wartungsverträge ✓ 3 Standorte. Jetzt Service anfragen!" 
+        />
+        <meta 
+          name="keywords" 
+          content="Arbeitsbühne Service NRW, Scherenarbeitsbühne Reparatur, Hubarbeitsbühne Wartung, Arbeitsbühne Ersatzteile, UVV Prüfung Arbeitsbühne, Zoomlion Service" 
+        />
+        <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/service" />
+        
+        <meta property="og:title" content="Service & Ersatzteile für Arbeitsbühnen NRW" />
+        <meta property="og:description" content="Professioneller Service für Arbeitsbühnen. Ersatzteile, Wartung, Reparatur, UVV-Prüfung." />
+        <meta property="og:url" content="https://www.arbeitsbuehne-kaufen-nrw.de/service" />
       </Helmet>
 
       {/* Hero Section */}
