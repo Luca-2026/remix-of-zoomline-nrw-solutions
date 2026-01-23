@@ -1,6 +1,3 @@
-import ze20gImage from "@/assets/hot-deals/ze20g.png";
-import ze27guImage from "@/assets/hot-deals/ze27gu.jpg";
-import ze55guImage from "@/assets/hot-deals/ze55gu.png";
 import zs0607acLiImage from "@/assets/hot-deals/zs0607ac-li.png";
 import zs1012acLiImage from "@/assets/hot-deals/zs1012ac-li.png";
 import zmp09jImage from "@/assets/hot-deals/zmp09j.png";
@@ -8,7 +5,7 @@ import zmp09jImage from "@/assets/hot-deals/zmp09j.png";
 export interface HotDeal {
   id: string;
   name: string;
-  type: "bagger" | "arbeitsbuehne";
+  type: "arbeitsbuehne";
   typeLabel: string;
   subtitle: string;
   dealPrice: number;
@@ -18,59 +15,6 @@ export interface HotDeal {
 }
 
 export const hotDeals: HotDeal[] = [
-  {
-    id: "deal-ze20g",
-    name: "ZE20G",
-    type: "bagger",
-    typeLabel: "2t Minibagger",
-    subtitle: "Kompakter Allrounder",
-    dealPrice: 19990,
-    highlight: "Top-Seller",
-    specs: [
-      { label: "Betriebsgewicht", value: "1.970 kg" },
-      { label: "Motorleistung", value: "15,4 kW @ 2.400 rpm" },
-      { label: "Schaufelkapazität", value: "0,04 m³" },
-      { label: "Fahrgeschwindigkeit", value: "4,2 / 2,2 km/h" },
-      { label: "Schwenkgeschwindigkeit", value: "9,5 r/min" },
-      { label: "Spurweite", value: "980 / 1.300 mm" },
-    ],
-    image: ze20gImage,
-  },
-  {
-    id: "deal-ze27gu",
-    name: "ZE27GU",
-    type: "bagger",
-    typeLabel: "3t Minibagger",
-    subtitle: "Zero-Tail Swing",
-    dealPrice: 26990,
-    highlight: "Kein Hecküberstand",
-    specs: [
-      { label: "Betriebsgewicht", value: "2.700 kg" },
-      { label: "Motorleistung", value: "15,4 kW @ 2.400 rpm" },
-      { label: "Schaufelkapazität", value: "0,08 m³" },
-      { label: "Max. Grabtiefe", value: "2.880 mm" },
-      { label: "Max. Kipphöhe", value: "4.410 mm" },
-      { label: "Besonderheit", value: "Zero-Tail Swing" },
-    ],
-    image: ze27guImage,
-  },
-  {
-    id: "deal-ze55gu",
-    name: "ZE55GU",
-    type: "bagger",
-    typeLabel: "6t Midibagger",
-    subtitle: "Kraftpaket",
-    dealPrice: 49900,
-    highlight: "Power-Deal",
-    specs: [
-      { label: "Betriebsgewicht", value: "5.800 kg" },
-      { label: "Motorleistung", value: "35,5 kW @ 2.200 rpm" },
-      { label: "Schaufelkapazität", value: "0,16 m³" },
-      { label: "Max. Grabtiefe", value: "3.670 mm" },
-      { label: "Max. Kipphöhe", value: "5.560 mm" },
-    ],
-    image: ze55guImage,
-  },
   {
     id: "deal-zs0607ac-li",
     name: "ZS0607AC-Li",

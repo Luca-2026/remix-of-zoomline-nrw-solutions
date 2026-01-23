@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import Arbeitsbuehnen from "./pages/Arbeitsbuehnen";
-import Bagger from "./pages/Bagger";
 import HotDeals from "./pages/HotDeals";
 import Service from "./pages/Service";
 import Standorte from "./pages/Standorte";
@@ -30,7 +29,6 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/arbeitsbuehnen" element={<Arbeitsbuehnen />} />
-            <Route path="/bagger" element={<Bagger />} />
             <Route path="/hot-deals" element={<HotDeals />} />
             <Route path="/service" element={<Service />} />
             <Route path="/standorte" element={<Standorte />} />

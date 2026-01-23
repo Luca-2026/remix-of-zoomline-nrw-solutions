@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { Flame, Shovel, ChevronsUp, ArrowRight, Phone, Mail } from "lucide-react";
+import { Flame, ChevronsUp, ArrowRight, Phone, Mail } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { hotDeals, type HotDeal } from "@/data/hotDeals";
@@ -48,12 +48,12 @@ function HotDealDetailCard({ deal, onInquiry }: { deal: HotDeal; onInquiry: () =
         <div className="aspect-square md:aspect-auto bg-muted relative min-h-[300px] overflow-hidden">
           <img
             src={deal.image}
-            alt={`Zoomlion ${deal.name} ${deal.type === "bagger" ? "Minibagger" : "Arbeitsbühne"} kaufen - ${deal.highlight} Sonderangebot NRW`}
+            alt={`Zoomlion ${deal.name} Arbeitsbühne kaufen - ${deal.highlight} Sonderangebot NRW`}
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute top-4 left-4">
             <span className="inline-flex items-center rounded-md bg-primary/90 px-3 py-1.5 text-sm font-medium text-primary-foreground">
-              {deal.type === "bagger" ? "Minibagger" : "Arbeitsbühne"}
+              Arbeitsbühne
             </span>
           </div>
         </div>
@@ -209,14 +209,11 @@ export default function HotDeals() {
     }
   };
 
-  const excavators = hotDeals.filter((d) => d.type === "bagger");
-  const platforms = hotDeals.filter((d) => d.type === "arbeitsbuehne");
-
   const dealsSchema = {
     "@context": "https://schema.org",
     "@type": "OfferCatalog",
-    "name": "Zoomlion Hot Deals - Sonderangebote Baumaschinen NRW",
-    "description": "Limitierte Sonderangebote für Minibagger und Arbeitsbühnen von Zoomlion in NRW",
+    "name": "Arbeitsbühnen Hot Deals - Sonderangebote NRW",
+    "description": "Limitierte Sonderangebote für Arbeitsbühnen von Zoomlion in NRW",
     "numberOfItems": hotDeals.length,
     "itemListElement": hotDeals.map((deal, index) => ({
       "@type": "Offer",
@@ -228,7 +225,7 @@ export default function HotDeals() {
       "availability": "https://schema.org/LimitedAvailability",
       "seller": {
         "@type": "Organization",
-        "name": "Zoomlion NRW"
+        "name": "Arbeitsbühne kaufen NRW"
       }
     }))
   };
@@ -236,24 +233,24 @@ export default function HotDeals() {
   return (
     <Layout>
       <Helmet>
-        <title>Hot Deals – Minibagger & Arbeitsbühnen Sonderangebote NRW | Zoomlion</title>
+        <title>Hot Deals – Arbeitsbühnen Sonderangebote NRW | Scherenarbeitsbühne kaufen</title>
         <meta 
           name="title" 
-          content="Hot Deals – Minibagger & Arbeitsbühnen Sonderangebote NRW | Zoomlion" 
+          content="Hot Deals – Arbeitsbühnen Sonderangebote NRW | Scherenarbeitsbühne kaufen" 
         />
         <meta 
           name="description" 
-          content="🔥 Limitierte Sonderangebote: Zoomlion Minibagger & Arbeitsbühnen zu Bestpreisen kaufen ➤ Sofort verfügbar ✓ Finanzierung möglich ✓ 3 Jahre Garantie. Jetzt zugreifen!" 
+          content="🔥 Limitierte Sonderangebote: Arbeitsbühnen zu Bestpreisen kaufen ➤ Scherenarbeitsbühnen, Teleskopbühnen ✓ Sofort verfügbar ✓ Finanzierung möglich ✓ 3 Jahre Garantie. Jetzt zugreifen!" 
         />
         <meta 
           name="keywords" 
-          content="Minibagger Angebot NRW, Arbeitsbühne Sonderangebot, Baumaschinen günstig kaufen, Zoomlion Aktion, Bagger Schnäppchen, Arbeitsbühne reduziert, Hot Deals Baumaschinen" 
+          content="Arbeitsbühne Angebot NRW, Arbeitsbühne Sonderangebot, Scherenarbeitsbühne günstig kaufen, Zoomlion Aktion, Arbeitsbühne Schnäppchen, Hubarbeitsbühne reduziert, Hot Deals Arbeitsbühnen" 
         />
-        <link rel="canonical" href="https://www.zoomlion-nrw.de/hot-deals" />
+        <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/hot-deals" />
         
-        <meta property="og:title" content="Hot Deals – Baumaschinen Sonderangebote NRW" />
-        <meta property="og:description" content="Limitierte Sonderangebote für Minibagger und Arbeitsbühnen. Jetzt zu Bestpreisen kaufen!" />
-        <meta property="og:url" content="https://www.zoomlion-nrw.de/hot-deals" />
+        <meta property="og:title" content="Hot Deals – Arbeitsbühnen Sonderangebote NRW" />
+        <meta property="og:description" content="Limitierte Sonderangebote für Arbeitsbühnen. Jetzt zu Bestpreisen kaufen!" />
+        <meta property="og:url" content="https://www.arbeitsbuehne-kaufen-nrw.de/hot-deals" />
         
         <script type="application/ld+json">
           {JSON.stringify(dealsSchema)}
@@ -271,7 +268,7 @@ export default function HotDeals() {
             <Flame className="h-12 w-12 text-destructive animate-pulse" />
           </div>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Limitierte Sonderangebote für Minibagger & Arbeitsbühnen zu Bestpreisen – solange der Vorrat reicht!
+            Limitierte Sonderangebote für Arbeitsbühnen zu Bestpreisen – solange der Vorrat reicht!
           </p>
           <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-6 py-2 text-primary font-medium">
             <span>🔥</span>
@@ -281,51 +278,26 @@ export default function HotDeals() {
         </div>
       </section>
 
-      {/* Excavators */}
-      {excavators.length > 0 && (
-        <section className="py-12 md:py-16">
-          <div className="container mx-auto px-4 lg:px-6">
-            <div className="flex items-center gap-3 mb-8">
-              <Shovel className="h-8 w-8 text-primary" />
-              <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
-                Minibagger Sonderangebote
-              </h2>
-            </div>
-            <div className="space-y-8">
-              {excavators.map((deal) => (
-                <HotDealDetailCard
-                  key={deal.id}
-                  deal={deal}
-                  onInquiry={() => handleInquiry(deal)}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* Platforms */}
-      {platforms.length > 0 && (
-        <section className="py-12 md:py-16 bg-muted/30">
-          <div className="container mx-auto px-4 lg:px-6">
-            <div className="flex items-center gap-3 mb-8">
-              <ChevronsUp className="h-8 w-8 text-primary" />
-              <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
-                Arbeitsbühnen Sonderangebote
-              </h2>
-            </div>
-            <div className="space-y-8">
-              {platforms.map((deal) => (
-                <HotDealDetailCard
-                  key={deal.id}
-                  deal={deal}
-                  onInquiry={() => handleInquiry(deal)}
-                />
-              ))}
-            </div>
+      <section className="py-12 md:py-16 bg-muted/30">
+        <div className="container mx-auto px-4 lg:px-6">
+          <div className="flex items-center gap-3 mb-8">
+            <ChevronsUp className="h-8 w-8 text-primary" />
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
+              Arbeitsbühnen Sonderangebote
+            </h2>
           </div>
-        </section>
-      )}
+          <div className="space-y-8">
+            {hotDeals.map((deal) => (
+              <HotDealDetailCard
+                key={deal.id}
+                deal={deal}
+                onInquiry={() => handleInquiry(deal)}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
@@ -335,7 +307,7 @@ export default function HotDeals() {
           </h2>
           <p className="text-lg opacity-90 mb-8 max-w-xl mx-auto">
             Unser Team berät Sie gerne persönlich zu allen Angeboten und findet
-            die perfekte Lösung für Ihre Anforderungen.
+            die perfekte Arbeitsbühne für Ihre Anforderungen.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
@@ -459,14 +431,14 @@ export default function HotDeals() {
               />
               <Label htmlFor="privacy" className="text-sm leading-relaxed">
                 Ich habe die{" "}
-                <Link to="/datenschutz" className="text-primary hover:underline" target="_blank">
+                <Link to="/datenschutz" className="text-primary underline" target="_blank">
                   Datenschutzbestimmungen
                 </Link>{" "}
-                gelesen und akzeptiere diese. *
+                gelesen und bin mit der Verarbeitung meiner Daten einverstanden. *
               </Label>
             </div>
 
-            <Button type="submit" className="w-full" disabled={isSubmitting}>
+            <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
               {isSubmitting ? "Wird gesendet..." : "Anfrage absenden"}
             </Button>
           </form>

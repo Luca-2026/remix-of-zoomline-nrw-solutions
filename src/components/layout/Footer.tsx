@@ -12,13 +12,13 @@ export function Footer() {
             <Link to="/">
               <img 
                 src={logoImage} 
-                alt="Zoomlion NRW Logo - Arbeitsbühnen und Bagger Fachhändler" 
+                alt="Arbeitsbühne kaufen NRW - Fachhändler für Hubarbeitsbühnen" 
                 className="h-12 w-auto"
               />
             </Link>
             <p className="text-sm text-secondary-foreground/80">
-              Exklusiver Fachhändler für Zoomlion Arbeitsbühnen und Bagger in
-              Nordrhein-Westfalen.
+              Exklusiver Fachhändler für Zoomlion Arbeitsbühnen in
+              Nordrhein-Westfalen. Scherenarbeitsbühnen, Teleskopbühnen und Gelenkbühnen.
             </p>
             <p className="text-xs text-secondary-foreground/60">
               Ein Unternehmen der
@@ -43,10 +43,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/bagger"
+                  to="/hot-deals"
                   className="text-secondary-foreground/80 hover:text-primary transition-colors"
                 >
-                  Bagger
+                  Hot Deals
                 </Link>
               </li>
               <li>
