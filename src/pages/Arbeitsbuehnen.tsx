@@ -3,7 +3,8 @@ import { Layout } from "@/components/layout/Layout";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { PlatformConfigurator } from "@/components/configurator/PlatformConfigurator";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
+import { cityData } from "@/data/cities";
 
 const Arbeitsbuehnen = () => {
   const breadcrumbSchema = {
@@ -100,10 +101,20 @@ const Arbeitsbuehnen = () => {
 
             <h3 className="font-heading text-xl font-bold mt-6 mb-3">Arbeitsbühne kaufen in Ihrer Stadt</h3>
             <p>
-              Wir liefern Arbeitsbühnen in ganz NRW: <strong>Köln, Düsseldorf, Dortmund, Essen, Duisburg, Bochum, 
-              Wuppertal, Bielefeld, Bonn, Münster, Krefeld, Mülheim, Gelsenkirchen, Oberhausen, Leverkusen, 
-              Mönchengladbach</strong> und Umgebung.
+              Wir liefern Arbeitsbühnen in ganz NRW – finden Sie Ihre Stadt:
             </p>
+          </div>
+          <div className="flex flex-wrap gap-2 mt-4">
+            {cityData.map(city => (
+              <Link
+                key={city.slug}
+                to={`/arbeitsbuehne-kaufen-${city.slug}`}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border bg-card hover:border-primary/50 hover:text-primary transition-colors text-sm"
+              >
+                <MapPin className="h-3 w-3" />
+                {city.name}
+              </Link>
+            ))}
           </div>
         </div>
       </section>

@@ -18,6 +18,7 @@ import Finanzierung from "./pages/Finanzierung";
 import Datenschutz from "./pages/Datenschutz";
 import Impressum from "./pages/Impressum";
 import FAQ from "./pages/FAQ";
+import StadtSeite from "./pages/StadtSeite";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +45,15 @@ const App = () => (
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/faq" element={<FAQ />} />
+            {/* Lokale SEO-Stadtseiten */}
+            <Route path="/arbeitsbuehne-kaufen-koeln" element={<StadtSeite />} />
+            <Route path="/arbeitsbuehne-kaufen-duesseldorf" element={<StadtSeite />} />
+            <Route path="/arbeitsbuehne-kaufen-dortmund" element={<StadtSeite />} />
+            <Route path="/arbeitsbuehne-kaufen-essen" element={<StadtSeite />} />
+            <Route path="/arbeitsbuehne-kaufen-bonn" element={<StadtSeite />} />
+            <Route path="/arbeitsbuehne-kaufen-duisburg" element={<StadtSeite />} />
+            <Route path="/arbeitsbuehne-kaufen-krefeld" element={<StadtSeite />} />
+            <Route path="/arbeitsbuehne-kaufen-muelheim" element={<StadtSeite />} />
             {/* Redirects from old URLs */}
             <Route path="/arbeitsbuehnen" element={<Navigate to="/arbeitsbuehne-kaufen-nrw" replace />} />
             <Route path="/hot-deals" element={<Navigate to="/arbeitsbuehne-sonderangebote-nrw" replace />} />

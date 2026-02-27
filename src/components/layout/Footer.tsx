@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, ExternalLink } from "lucide-react";
 import logoImage from "@/assets/logo-zoomlion-nrw.png";
+import { cityData } from "@/data/cities";
 
 export function Footer() {
   return (
@@ -31,67 +32,35 @@ export function Footer() {
           <div>
             <h3 className="font-heading text-sm font-semibold mb-4">Arbeitsbühnen kaufen</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link to="/arbeitsbuehne-kaufen-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
-                  Alle Arbeitsbühnen
-                </Link>
-              </li>
-              <li>
-                <Link to="/scherenarbeitsbuehne-kaufen-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
-                  Scherenarbeitsbühnen
-                </Link>
-              </li>
-              <li>
-                <Link to="/teleskopbuehne-kaufen-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
-                  Teleskopbühnen
-                </Link>
-              </li>
-              <li>
-                <Link to="/gelenkbuehne-kaufen-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
-                  Gelenkteleskopbühnen
-                </Link>
-              </li>
-              <li>
-                <Link to="/arbeitsbuehne-sonderangebote-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
-                  🔥 Hot Deals / Sonderangebote
-                </Link>
-              </li>
-              <li>
-                <Link to="/arbeitsbuehne-finanzierung-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
-                  Finanzierungsrechner
-                </Link>
-              </li>
-              <li>
-                <Link to="/arbeitsbuehne-service-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
-                  Service & Ersatzteile
-                </Link>
-              </li>
-              <li>
-                <Link to="/faq" className="text-secondary-foreground/80 hover:text-primary transition-colors">
-                  FAQ
-                </Link>
-              </li>
+              <li><Link to="/arbeitsbuehne-kaufen-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">Alle Arbeitsbühnen</Link></li>
+              <li><Link to="/scherenarbeitsbuehne-kaufen-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">Scherenarbeitsbühnen</Link></li>
+              <li><Link to="/teleskopbuehne-kaufen-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">Teleskopbühnen</Link></li>
+              <li><Link to="/gelenkbuehne-kaufen-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">Gelenkteleskopbühnen</Link></li>
+              <li><Link to="/arbeitsbuehne-sonderangebote-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">🔥 Hot Deals / Sonderangebote</Link></li>
+              <li><Link to="/arbeitsbuehne-finanzierung-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">Finanzierungsrechner</Link></li>
+              <li><Link to="/arbeitsbuehne-service-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">Service & Ersatzteile</Link></li>
+              <li><Link to="/faq" className="text-secondary-foreground/80 hover:text-primary transition-colors">FAQ</Link></li>
             </ul>
           </div>
 
-          {/* Standorte */}
+          {/* Standorte & Städte */}
           <div>
             <h3 className="font-heading text-sm font-semibold mb-4">
-              <Link to="/arbeitsbuehne-kaufen-standorte-nrw" className="hover:text-primary transition-colors">Standorte</Link>
+              <Link to="/arbeitsbuehne-kaufen-standorte-nrw" className="hover:text-primary transition-colors">Standorte & Städte</Link>
             </h3>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-1.5 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
                 <div>
                   <span className="block text-secondary-foreground/80">Bonn</span>
-                  <a href="tel:0228-50466061" className="text-primary hover:underline">0228 50466061</a>
+                  <a href="tel:0228-50466061" className="text-primary hover:underline text-xs">0228 50466061</a>
                 </div>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
                 <div>
                   <span className="block text-secondary-foreground/80">Krefeld</span>
-                  <a href="tel:02151-4179904" className="text-primary hover:underline">02151 4179904</a>
+                  <a href="tel:02151-4179904" className="text-primary hover:underline text-xs">02151 4179904</a>
                 </div>
               </li>
               <li className="flex items-start gap-2">
@@ -99,6 +68,21 @@ export function Footer() {
                 <span className="text-secondary-foreground/80">Mülheim a. d. Ruhr</span>
               </li>
             </ul>
+            {/* Lokale SEO Stadt-Links */}
+            <div className="mt-4 pt-3 border-t border-secondary-foreground/10">
+              <h4 className="text-xs font-semibold mb-2 text-secondary-foreground/60">Arbeitsbühne kaufen in:</h4>
+              <div className="flex flex-wrap gap-1.5">
+                {cityData.map(city => (
+                  <Link
+                    key={city.slug}
+                    to={`/arbeitsbuehne-kaufen-${city.slug}`}
+                    className="text-xs text-secondary-foreground/70 hover:text-primary transition-colors"
+                  >
+                    {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Kontakt */}
