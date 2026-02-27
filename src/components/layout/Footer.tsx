@@ -12,13 +12,13 @@ export function Footer() {
             <Link to="/">
               <img 
                 src={logoImage} 
-                alt="Arbeitsbühne kaufen NRW - Fachhändler für Hubarbeitsbühnen" 
+                alt="Arbeitsbühne kaufen NRW - Zoomlion Fachhändler" 
                 className="h-12 w-auto"
               />
             </Link>
             <p className="text-sm text-secondary-foreground/80">
               Exklusiver Fachhändler für Zoomlion Arbeitsbühnen in
-              Nordrhein-Westfalen. Scherenarbeitsbühnen, Teleskopbühnen und Gelenkbühnen.
+              Nordrhein-Westfalen. Scherenarbeitsbühnen, Teleskopbühnen und Gelenkbühnen kaufen.
             </p>
             <p className="text-xs text-secondary-foreground/60">
               Ein Unternehmen der
@@ -27,73 +27,47 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Navigation */}
+          {/* Arbeitsbühnen */}
           <div>
-            <h3 className="font-heading text-sm font-semibold mb-4">
-              Navigation
-            </h3>
+            <h3 className="font-heading text-sm font-semibold mb-4">Arbeitsbühnen kaufen</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link
-                  to="/arbeitsbuehnen"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                >
-                  Arbeitsbühnen
+                <Link to="/arbeitsbuehne-kaufen-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
+                  Alle Arbeitsbühnen
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/hot-deals"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                >
-                  Hot Deals
+                <Link to="/scherenarbeitsbuehne-kaufen-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
+                  Scherenarbeitsbühnen
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/service"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                >
-                  Service & Ersatzteile
+                <Link to="/teleskopbuehne-kaufen-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
+                  Teleskopbühnen
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/standorte"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                >
-                  Standorte
+                <Link to="/gelenkbuehne-kaufen-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
+                  Gelenkteleskopbühnen
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/finanzierung"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                >
+                <Link to="/arbeitsbuehne-sonderangebote-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
+                  🔥 Hot Deals / Sonderangebote
+                </Link>
+              </li>
+              <li>
+                <Link to="/arbeitsbuehne-finanzierung-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
                   Finanzierungsrechner
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/ueber-uns"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                >
-                  Über uns
+                <Link to="/arbeitsbuehne-service-nrw" className="text-secondary-foreground/80 hover:text-primary transition-colors">
+                  Service & Ersatzteile
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/kontakt"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                >
-                  Kontakt
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/faq"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                >
+                <Link to="/faq" className="text-secondary-foreground/80 hover:text-primary transition-colors">
                   FAQ
                 </Link>
               </li>
@@ -103,42 +77,26 @@ export function Footer() {
           {/* Standorte */}
           <div>
             <h3 className="font-heading text-sm font-semibold mb-4">
-              Standorte
+              <Link to="/arbeitsbuehne-kaufen-standorte-nrw" className="hover:text-primary transition-colors">Standorte</Link>
             </h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
                 <div>
-                  <span className="block text-secondary-foreground/80">
-                    Bonn
-                  </span>
-                  <a
-                    href="tel:0228-50466061"
-                    className="text-primary hover:underline"
-                  >
-                    0228 50466061
-                  </a>
+                  <span className="block text-secondary-foreground/80">Bonn</span>
+                  <a href="tel:0228-50466061" className="text-primary hover:underline">0228 50466061</a>
                 </div>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
                 <div>
-                  <span className="block text-secondary-foreground/80">
-                    Krefeld
-                  </span>
-                  <a
-                    href="tel:02151-4179904"
-                    className="text-primary hover:underline"
-                  >
-                    02151 4179904
-                  </a>
+                  <span className="block text-secondary-foreground/80">Krefeld</span>
+                  <a href="tel:02151-4179904" className="text-primary hover:underline">02151 4179904</a>
                 </div>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
-                <span className="text-secondary-foreground/80">
-                  Mülheim a. d. Ruhr
-                </span>
+                <span className="text-secondary-foreground/80">Mülheim a. d. Ruhr</span>
               </li>
             </ul>
           </div>
@@ -149,28 +107,16 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <a
-                  href="tel:02151-4179904"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                >
-                  02151 4179904
-                </a>
+                <a href="tel:02151-4179904" className="text-secondary-foreground/80 hover:text-primary transition-colors">02151 4179904</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <a
-                  href="mailto:verkauf@zoomlion-nrw.de"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                >
-                  verkauf@zoomlion-nrw.de
-                </a>
+                <a href="mailto:verkauf@zoomlion-nrw.de" className="text-secondary-foreground/80 hover:text-primary transition-colors">verkauf@zoomlion-nrw.de</a>
               </li>
               <li className="flex items-start gap-2 mt-4">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
                 <address className="not-italic text-secondary-foreground/80">
-                  Anrather Straße 291
-                  <br />
-                  47807 Krefeld
+                  Anrather Straße 291<br />47807 Krefeld
                 </address>
               </li>
             </ul>
@@ -180,23 +126,13 @@ export function Footer() {
               <h4 className="text-xs font-semibold mb-3 text-secondary-foreground/60">Weitere Angebote</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a
-                    href="https://www.slt-rental.de"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-secondary-foreground/80 hover:text-primary transition-colors"
-                  >
+                  <a href="https://www.slt-rental.de" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-secondary-foreground/80 hover:text-primary transition-colors">
                     <ExternalLink className="h-3 w-3" />
                     Hier geht's zur Vermietung
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://www.baumaschinen.blog"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-secondary-foreground/80 hover:text-primary transition-colors"
-                  >
+                  <a href="https://www.baumaschinen.blog" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-secondary-foreground/80 hover:text-primary transition-colors">
                     <ExternalLink className="h-3 w-3" />
                     Baumaschinen Blog
                   </a>
@@ -209,18 +145,9 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-secondary-foreground/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-secondary-foreground/60">
           <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              to="/datenschutz"
-              className="hover:text-secondary-foreground transition-colors"
-            >
-              Datenschutz
-            </Link>
-            <Link
-              to="/impressum"
-              className="hover:text-secondary-foreground transition-colors"
-            >
-              Impressum
-            </Link>
+            <Link to="/datenschutz" className="hover:text-secondary-foreground transition-colors">Datenschutz</Link>
+            <Link to="/impressum" className="hover:text-secondary-foreground transition-colors">Impressum</Link>
+            <Link to="/ueber-uns" className="hover:text-secondary-foreground transition-colors">Über uns</Link>
           </div>
           <p>© {new Date().getFullYear()} SLT Technology Group GmbH & Co. KG. Alle Rechte vorbehalten.</p>
         </div>

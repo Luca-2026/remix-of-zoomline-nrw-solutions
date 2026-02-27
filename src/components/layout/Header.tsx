@@ -7,11 +7,14 @@ import logoImage from "@/assets/logo-zoomlion-nrw.png";
 
 const navigation = [
   { name: "Startseite", href: "/" },
-  { name: "Hot Deals", href: "/hot-deals", highlight: true },
-  { name: "Arbeitsbühnen", href: "/arbeitsbuehnen" },
-  { name: "Finanzierung", href: "/finanzierung" },
-  { name: "Service", href: "/service" },
-  { name: "Standorte", href: "/standorte" },
+  { name: "Hot Deals", href: "/arbeitsbuehne-sonderangebote-nrw", highlight: true },
+  { name: "Arbeitsbühnen", href: "/arbeitsbuehne-kaufen-nrw" },
+  { name: "Scherenarbeitsbühnen", href: "/scherenarbeitsbuehne-kaufen-nrw" },
+  { name: "Teleskopbühnen", href: "/teleskopbuehne-kaufen-nrw" },
+  { name: "Gelenkbühnen", href: "/gelenkbuehne-kaufen-nrw" },
+  { name: "Finanzierung", href: "/arbeitsbuehne-finanzierung-nrw" },
+  { name: "Service", href: "/arbeitsbuehne-service-nrw" },
+  { name: "Standorte", href: "/arbeitsbuehne-kaufen-standorte-nrw" },
   { name: "Kontakt", href: "/kontakt" },
 ];
 
@@ -26,7 +29,7 @@ export function Header() {
         <Link to="/" className="flex items-center">
           <img 
             src={logoImage} 
-            alt="Arbeitsbühne kaufen NRW - Fachhändler für Scherenarbeitsbühnen, Teleskopbühnen und Gelenkbühnen" 
+            alt="Arbeitsbühne kaufen NRW - Zoomlion Fachhändler für Scherenarbeitsbühnen, Teleskopbühnen und Gelenkbühnen" 
             className="h-10 md:h-12 w-auto"
           />
         </Link>
@@ -60,7 +63,7 @@ export function Header() {
             02151 4179904
           </a>
           <Button asChild size="sm">
-            <Link to="/kontakt">Jetzt Anfrage senden</Link>
+            <Link to="/kontakt">Jetzt Angebot anfordern</Link>
           </Button>
         </div>
 
@@ -108,7 +111,7 @@ export function Header() {
               </a>
               <Button asChild className="w-full">
                 <Link to="/kontakt" onClick={() => setMobileMenuOpen(false)}>
-                  Jetzt Anfrage senden
+                  Jetzt Angebot anfordern
                 </Link>
               </Button>
             </div>

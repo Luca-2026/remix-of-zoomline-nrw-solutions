@@ -9,31 +9,23 @@ export function CTABar() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left">
             <h3 className="font-heading text-lg font-bold text-primary-foreground">
-              Bereit für Ihre neue Maschine?
+              Arbeitsbühne kaufen in NRW?
             </h3>
             <p className="text-sm text-primary-foreground/80">
-              Finden Sie die passende Lösung für Ihr Projekt
+              Scherenarbeitsbühne, Teleskopbühne oder Gelenkbühne – finden Sie die passende Lösung
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
-            <Button
-              asChild
-              variant="secondary"
-              className="bg-white text-primary hover:bg-white/90"
-            >
-              <Link to="/arbeitsbuehnen">
+            <Button asChild variant="secondary" className="bg-white text-primary hover:bg-white/90">
+              <Link to="/arbeitsbuehne-kaufen-nrw">
                 <ArrowRight className="mr-2 h-4 w-4" />
-                Konfigurator starten
+                Jetzt konfigurieren
               </Link>
             </Button>
-            <Button
-              asChild
-              variant="outline"
-              className="border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:text-white"
-            >
+            <Button asChild variant="outline" className="border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:text-white">
               <Link to="/kontakt">
                 <MessageSquare className="mr-2 h-4 w-4" />
-                Direkt anfragen
+                Angebot anfordern
               </Link>
             </Button>
           </div>

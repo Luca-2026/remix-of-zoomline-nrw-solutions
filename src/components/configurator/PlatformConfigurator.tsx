@@ -28,8 +28,15 @@ const defaultFilters: PlatformFilters = {
   maxHeight: 75,
 };
 
-export function PlatformConfigurator() {
-  const [filters, setFilters] = useState<PlatformFilters>(defaultFilters);
+interface PlatformConfiguratorProps {
+  defaultCategory?: string;
+}
+
+export function PlatformConfigurator({ defaultCategory }: PlatformConfiguratorProps = {}) {
+  const [filters, setFilters] = useState<PlatformFilters>({
+    ...defaultFilters,
+    category: defaultCategory || "all",
+  });
   const [selectedProduct, setSelectedProduct] = useState<AerialPlatform | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 

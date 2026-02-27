@@ -49,7 +49,7 @@ export function FinancingTeaser() {
                 </p>
               </div>
               <Button asChild size="lg" className="group">
-                <Link to="/finanzierung">
+                <Link to="/arbeitsbuehne-finanzierung-nrw">
                   <Calculator className="mr-2 h-5 w-5" />
                   Jetzt berechnen
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

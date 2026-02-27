@@ -37,7 +37,7 @@ export function LocationsTeaser() {
                   {locationImage ? (
                     <img
                       src={locationImage}
-                      alt={`Zoomlion NRW ${location.name} - Arbeitsbühnen und Bagger Standort ${location.city}`}
+                      alt={`Arbeitsbühne kaufen ${location.city} - Zoomlion Fachhändler Standort`}
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                   ) : (
@@ -80,7 +80,7 @@ export function LocationsTeaser() {
 
         <div className="mt-8 text-center">
           <Button asChild variant="outline">
-            <Link to="/standorte">
+            <Link to="/arbeitsbuehne-kaufen-standorte-nrw">
               Alle Standorte ansehen
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
