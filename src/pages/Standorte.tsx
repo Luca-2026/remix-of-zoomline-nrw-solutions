@@ -6,7 +6,6 @@ import { MapPin, Phone, Mail, Building2 } from "lucide-react";
 import bonnImage from "@/assets/locations/bonn.webp";
 import krefeldImage from "@/assets/locations/krefeld.jpg";
 
-// Mapping von Standort-IDs zu Bildern
 const locationImages: Record<string, string | null> = {
   bonn: bonnImage,
   krefeld: krefeldImage,
@@ -20,69 +19,39 @@ const Standorte = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Start",
-        "item": "https://www.arbeitsbuehne-kaufen-nrw.de/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Standorte",
-        "item": "https://www.arbeitsbuehne-kaufen-nrw.de/standorte"
-      }
+      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://www.arbeitsbuehne-kaufen-nrw.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Standorte – Arbeitsbühne kaufen NRW", "item": "https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehne-kaufen-standorte-nrw" }
     ]
   };
 
   return (
     <Layout>
       <Helmet>
-        <title>Standorte NRW – Arbeitsbühne kaufen | Bonn, Krefeld, Mülheim</title>
-        <meta 
-          name="title" 
-          content="Standorte NRW – Arbeitsbühne kaufen | Bonn, Krefeld, Mülheim" 
-        />
-        <meta 
-          name="description" 
-          content="3 Standorte in NRW für Arbeitsbühnen ➤ Bonn ✓ Krefeld ✓ Mülheim/Ruhrgebiet ✓ Ersatzteile vor Ort ✓ Service & Beratung. Finden Sie Ihren nächsten Zoomlion Fachhändler!" 
-        />
-        <meta 
-          name="keywords" 
-          content="Arbeitsbühne kaufen Bonn, Arbeitsbühne kaufen Krefeld, Arbeitsbühne kaufen Ruhrgebiet, Scherenarbeitsbühne Händler NRW, Hubarbeitsbühne kaufen Düsseldorf, Zoomlion Händler Deutschland" 
-        />
-        <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/standorte" />
-        
-        <meta property="og:title" content="3 Standorte in NRW – Arbeitsbühne kaufen" />
-        <meta property="og:description" content="Beratung, Service und Ersatzteile immer in Ihrer Nähe. 3 Standorte in Nordrhein-Westfalen." />
-        <meta property="og:url" content="https://www.arbeitsbuehne-kaufen-nrw.de/standorte" />
-        
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
-        </script>
+        <title>Arbeitsbühne kaufen Bonn, Krefeld, Mülheim | 3 Standorte NRW</title>
+        <meta name="description" content="Arbeitsbühne kaufen an 3 Standorten in NRW ➤ Bonn ✓ Krefeld ✓ Mülheim/Ruhrgebiet ✓ Scherenarbeitsbühne kaufen ✓ Ersatzteile vor Ort ✓ Service & Beratung. Jetzt Standort finden!" />
+        <meta name="keywords" content="Arbeitsbühne kaufen Bonn, Arbeitsbühne kaufen Krefeld, Arbeitsbühne kaufen Ruhrgebiet, Arbeitsbühne kaufen Köln, Arbeitsbühne kaufen Düsseldorf, Scherenarbeitsbühne kaufen NRW, Zoomlion Händler NRW" />
+        <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehne-kaufen-standorte-nrw" />
+        <meta property="og:title" content="Arbeitsbühne kaufen – 3 Standorte in NRW" />
+        <meta property="og:description" content="Arbeitsbühne kaufen in Bonn, Krefeld und Mülheim. Service und Ersatzteile immer in Ihrer Nähe." />
+        <meta property="og:url" content="https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehne-kaufen-standorte-nrw" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <SectionHeading
             badge="Standorte"
-            title="3 Standorte in Nordrhein-Westfalen"
-            subtitle="Beratung, Ersatzteile & Service immer in Ihrer Nähe – Arbeitsbühnen kaufen"
+            title="Arbeitsbühne kaufen – 3 Standorte in NRW"
+            subtitle="Scherenarbeitsbühnen, Teleskopbühnen und Gelenkbühnen kaufen – mit Beratung, Ersatzteilen & Service vor Ort"
           />
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {locations.map((loc) => {
               const locationImage = locationImages[loc.id];
-              
               return (
                 <div key={loc.id} className="group rounded-xl border border-border bg-card overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary/30">
-                  {/* Location Image */}
                   <div className="aspect-video bg-muted relative overflow-hidden">
                     {locationImage ? (
-                      <img
-                        src={locationImage}
-                        alt={`Arbeitsbühne kaufen ${loc.city} - Zoomlion Fachhändler ${loc.name}`}
-                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
+                      <img src={locationImage} alt={`Arbeitsbühne kaufen ${loc.city} - Zoomlion Fachhändler Standort ${loc.name}`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
                     ) : (
                       <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-muted to-muted/80">
                         <div className="text-center">
@@ -93,26 +62,17 @@ const Standorte = () => {
                       </div>
                     )}
                   </div>
-                  
                   <div className="p-6">
-                    <h3 className="font-heading text-xl font-bold mb-2">{loc.name}</h3>
+                    <h2 className="font-heading text-xl font-bold mb-2">{loc.name}</h2>
                     <p className="text-muted-foreground">{loc.address}</p>
                     <p className="text-muted-foreground mb-4">{loc.city}</p>
-                    
                     <div className="space-y-2">
                       {loc.showPhone && loc.phone && (
-                        <a 
-                          href={`tel:${loc.phone.replace(/\s/g, "")}`} 
-                          className="flex items-center gap-2 text-primary font-medium hover:underline"
-                        >
+                        <a href={`tel:${loc.phone.replace(/\s/g, "")}`} className="flex items-center gap-2 text-primary font-medium hover:underline">
                           <Phone className="h-4 w-4" /> {loc.phone}
                         </a>
                       )}
-                      
-                      <a 
-                        href={`mailto:${EMAIL}`} 
-                        className="flex items-center gap-2 text-primary font-medium hover:underline"
-                      >
+                      <a href={`mailto:${EMAIL}`} className="flex items-center gap-2 text-primary font-medium hover:underline">
                         <Mail className="h-4 w-4" /> {EMAIL}
                       </a>
                     </div>
@@ -128,17 +88,17 @@ const Standorte = () => {
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-heading text-2xl font-bold mb-4">Ihr Zoomlion Fachhändler für Arbeitsbühnen in NRW</h2>
+            <h2 className="font-heading text-2xl font-bold mb-4">Arbeitsbühne kaufen in Ihrer Nähe – Zoomlion Fachhändler NRW</h2>
             <p>
               Mit <strong>3 Standorten in Nordrhein-Westfalen</strong> sind wir immer in Ihrer Nähe. 
-              Ob Sie eine <strong>Scherenarbeitsbühne</strong>, <strong>Teleskopbühne</strong> oder <strong>Gelenkbühne</strong> kaufen möchten
-              oder <strong>Ersatzteile</strong> benötigen – unser Team berät Sie kompetent vor Ort.
+              Ob Sie eine <strong>Scherenarbeitsbühne kaufen in Köln</strong>, eine <strong>Teleskopbühne kaufen in Düsseldorf</strong> oder 
+              eine <strong>Gelenkbühne kaufen im Ruhrgebiet</strong> – unser Team berät Sie kompetent vor Ort.
             </p>
-            <h3 className="font-heading text-xl font-bold mt-6 mb-3">Regionale Abdeckung</h3>
+            <h3 className="font-heading text-xl font-bold mt-6 mb-3">Regionale Abdeckung – Arbeitsbühne kaufen in:</h3>
             <ul>
-              <li><strong>Standort Bonn:</strong> Köln, Bonn, Bergisch Gladbach, Leverkusen, Rhein-Sieg-Kreis</li>
-              <li><strong>Standort Krefeld:</strong> Düsseldorf, Duisburg, Mönchengladbach, Neuss, Niederrhein</li>
-              <li><strong>Standort Mülheim:</strong> Essen, Dortmund, Bochum, Oberhausen, gesamtes Ruhrgebiet</li>
+              <li><strong>Standort Bonn:</strong> Arbeitsbühne kaufen Köln, Bonn, Bergisch Gladbach, Leverkusen, Rhein-Sieg-Kreis, Aachen</li>
+              <li><strong>Standort Krefeld:</strong> Arbeitsbühne kaufen Düsseldorf, Duisburg, Mönchengladbach, Neuss, Niederrhein</li>
+              <li><strong>Standort Mülheim:</strong> Arbeitsbühne kaufen Essen, Dortmund, Bochum, Oberhausen, gesamtes Ruhrgebiet</li>
             </ul>
           </div>
         </div>

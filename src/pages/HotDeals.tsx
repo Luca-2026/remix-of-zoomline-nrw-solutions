@@ -233,24 +233,13 @@ export default function HotDeals() {
   return (
     <Layout>
       <Helmet>
-        <title>Hot Deals – Arbeitsbühnen Sonderangebote NRW | Scherenarbeitsbühne kaufen</title>
-        <meta 
-          name="title" 
-          content="Hot Deals – Arbeitsbühnen Sonderangebote NRW | Scherenarbeitsbühne kaufen" 
-        />
-        <meta 
-          name="description" 
-          content="🔥 Limitierte Sonderangebote: Arbeitsbühnen zu Bestpreisen kaufen ➤ Scherenarbeitsbühnen, Teleskopbühnen ✓ Sofort verfügbar ✓ Finanzierung möglich ✓ 3 Jahre Garantie. Jetzt zugreifen!" 
-        />
-        <meta 
-          name="keywords" 
-          content="Arbeitsbühne Angebot NRW, Arbeitsbühne Sonderangebot, Scherenarbeitsbühne günstig kaufen, Zoomlion Aktion, Arbeitsbühne Schnäppchen, Hubarbeitsbühne reduziert, Hot Deals Arbeitsbühnen" 
-        />
-        <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/hot-deals" />
-        
-        <meta property="og:title" content="Hot Deals – Arbeitsbühnen Sonderangebote NRW" />
-        <meta property="og:description" content="Limitierte Sonderangebote für Arbeitsbühnen. Jetzt zu Bestpreisen kaufen!" />
-        <meta property="og:url" content="https://www.arbeitsbuehne-kaufen-nrw.de/hot-deals" />
+        <title>Arbeitsbühne Sonderangebote NRW | Hot Deals ab 12.990 €</title>
+        <meta name="description" content="🔥 Arbeitsbühne Sonderangebote NRW ➤ Scherenarbeitsbühnen ab 12.990 € ✓ Sofort verfügbar ✓ 3 Jahre Garantie ✓ Finanzierung möglich ✓ Limitierte Angebote. Jetzt zugreifen!" />
+        <meta name="keywords" content="Arbeitsbühne Sonderangebot NRW, Scherenarbeitsbühne günstig kaufen, Arbeitsbühne Angebot, Zoomlion Aktion, Hubarbeitsbühne reduziert, Arbeitsbühne kaufen günstig" />
+        <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehne-sonderangebote-nrw" />
+        <meta property="og:title" content="Arbeitsbühne Sonderangebote NRW | Hot Deals" />
+        <meta property="og:description" content="Limitierte Sonderangebote für Arbeitsbühnen. Scherenarbeitsbühnen ab 12.990 €. Jetzt kaufen!" />
+        <meta property="og:url" content="https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehne-sonderangebote-nrw" />
         
         <script type="application/ld+json">
           {JSON.stringify(dealsSchema)}
@@ -263,12 +252,12 @@ export default function HotDeals() {
           <div className="flex items-center justify-center gap-4 mb-6">
             <Flame className="h-12 w-12 text-destructive animate-pulse" />
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
-              Hot Deals
+              Arbeitsbühne Sonderangebote
             </h1>
             <Flame className="h-12 w-12 text-destructive animate-pulse" />
           </div>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Limitierte Sonderangebote für Arbeitsbühnen zu Bestpreisen – solange der Vorrat reicht!
+            Limitierte Sonderangebote für Scherenarbeitsbühnen und Mastbühnen – ab 12.990 € netto, solange der Vorrat reicht!
           </p>
           <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-6 py-2 text-primary font-medium">
             <span>🔥</span>
@@ -284,7 +273,7 @@ export default function HotDeals() {
           <div className="flex items-center gap-3 mb-8">
             <ChevronsUp className="h-8 w-8 text-primary" />
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
-              Arbeitsbühnen Sonderangebote
+              Scherenarbeitsbühnen & Mastbühnen – Sonderangebote
             </h2>
           </div>
           <div className="space-y-8">

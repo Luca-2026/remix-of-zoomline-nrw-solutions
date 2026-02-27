@@ -30,75 +30,58 @@ const Finanzierung = () => {
   };
 
   const formatCurrency = (amount: number) => {
-    return new Intl.NumberFormat('de-DE', {
-      style: 'currency',
-      currency: 'EUR'
-    }).format(amount);
+    return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(amount);
   };
 
   const benefits = [
-    {
-      icon: Calculator,
-      title: "Transparente Kalkulation",
-      description: "Sofort sehen, was die monatliche Rate kostet – ohne versteckte Gebühren."
-    },
-    {
-      icon: Clock,
-      title: "Flexible Laufzeiten",
-      description: "12 bis 48 Monate – passend zu Ihrem Projekt und Cashflow."
-    },
-    {
-      icon: Percent,
-      title: "Attraktive Konditionen",
-      description: "Wettbewerbsfähige Zinssätze für Gewerbekunden und Bauunternehmen."
-    },
-    {
-      icon: Shield,
-      title: "Sicherheit & Beratung",
-      description: "Persönliche Beratung durch unsere Finanzierungsexperten."
-    }
+    { icon: Calculator, title: "Transparente Kalkulation", description: "Sofort sehen, was die monatliche Rate kostet – ohne versteckte Gebühren." },
+    { icon: Clock, title: "Flexible Laufzeiten", description: "12 bis 48 Monate – passend zu Ihrem Projekt und Cashflow." },
+    { icon: Percent, title: "Attraktive Konditionen", description: "Wettbewerbsfähige Zinssätze für Gewerbekunden und Bauunternehmen." },
+    { icon: Shield, title: "Sicherheit & Beratung", description: "Persönliche Beratung durch unsere Finanzierungsexperten." }
   ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Kann ich eine Arbeitsbühne finanzieren?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ja, wir bieten flexible Finanzierung für alle Zoomlion Arbeitsbühnen. Laufzeiten von 12 bis 48 Monaten, individuelle Anzahlungen und Schlussraten." }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie hoch ist die monatliche Rate für eine Scherenarbeitsbühne?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Beispiel: Eine Scherenarbeitsbühne für 25.000 € netto kostet bei 36 Monaten Laufzeit und 20% Anzahlung ca. 464 € pro Monat." }
+      }
+    ]
+  };
 
   return (
     <Layout>
       <Helmet>
-        <title>Arbeitsbühne finanzieren NRW | Finanzierungsrechner</title>
-        <meta 
-          name="title" 
-          content="Arbeitsbühne finanzieren NRW | Finanzierungsrechner" 
-        />
-        <meta 
-          name="description" 
-          content="Arbeitsbühne finanzieren ➤ Online-Rechner für monatliche Rate ✓ Flexible Laufzeiten 12-48 Monate ✓ Attraktive B2B-Konditionen ✓ Arbeitsbühnen Leasing NRW. Jetzt berechnen!" 
-        />
-        <meta 
-          name="keywords" 
-          content="Arbeitsbühne finanzieren, Scherenarbeitsbühne Leasing, Hubarbeitsbühne Finanzierung NRW, Teleskopbühne Ratenkauf, Arbeitsbühne Leasing, Hebebühne finanzieren" 
-        />
-        <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/finanzierung" />
-        
-        <meta property="og:title" content="Arbeitsbühne finanzieren – Finanzierungsrechner" />
-        <meta property="og:description" content="Berechnen Sie Ihre monatliche Rate für Arbeitsbühnen. Flexible B2B-Konditionen." />
-        <meta property="og:url" content="https://www.arbeitsbuehne-kaufen-nrw.de/finanzierung" />
+        <title>Arbeitsbühne finanzieren NRW | Leasing & Ratenkauf Rechner</title>
+        <meta name="description" content="Arbeitsbühne finanzieren in NRW ➤ Online-Rechner für monatliche Rate ✓ Leasing & Ratenkauf ✓ 12-48 Monate Laufzeit ✓ Scherenarbeitsbühne, Teleskopbühne finanzieren. Jetzt Rate berechnen!" />
+        <meta name="keywords" content="Arbeitsbühne finanzieren, Arbeitsbühne Leasing NRW, Scherenarbeitsbühne finanzieren, Hubarbeitsbühne Leasing, Teleskopbühne Ratenkauf, Arbeitsbühne Finanzierungsrechner, Hebebühne Leasing" />
+        <link rel="canonical" href="https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehne-finanzierung-nrw" />
+        <meta property="og:title" content="Arbeitsbühne finanzieren NRW | Leasing & Ratenkauf" />
+        <meta property="og:description" content="Berechnen Sie Ihre monatliche Rate für Arbeitsbühnen. Flexible Finanzierung und Leasing." />
+        <meta property="og:url" content="https://www.arbeitsbuehne-kaufen-nrw.de/arbeitsbuehne-finanzierung-nrw" />
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <SectionHeading
-            badge="Finanzierung"
-            title="Finanzierungsrechner"
-            subtitle="Berechnen Sie Ihre monatliche Rate – schnell, transparent und unverbindlich"
+            badge="Finanzierung & Leasing"
+            title="Arbeitsbühne finanzieren – Rate berechnen"
+            subtitle="Scherenarbeitsbühne, Teleskopbühne oder Gelenkbühne – berechnen Sie Ihre monatliche Rate"
           />
 
           <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Rechner */}
             <div className="lg:col-span-2">
-              <FinancingCalculator 
-                onTransferToInquiry={handleTransferToInquiry}
-              />
+              <FinancingCalculator onTransferToInquiry={handleTransferToInquiry} />
             </div>
-
-            {/* Vorteile Sidebar */}
             <div className="space-y-4">
               <h3 className="font-heading font-bold text-lg mb-4">Ihre Vorteile</h3>
               {benefits.map((benefit, index) => (
@@ -112,16 +95,13 @@ const Finanzierung = () => {
                   </CardContent>
                 </Card>
               ))}
-
-              <div className="mt-6">
-                <TrustBadges variant="compact" />
-              </div>
+              <div className="mt-6"><TrustBadges variant="compact" /></div>
             </div>
           </div>
 
           {/* Beispielrechnung */}
           <div className="max-w-6xl mx-auto mt-16">
-            <h3 className="font-heading font-bold text-xl mb-6 text-center">Beispielrechnung</h3>
+            <h2 className="font-heading font-bold text-xl mb-6 text-center">Beispielrechnung: Scherenarbeitsbühne finanzieren</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
                 { label: "Nettokaufpreis", value: "25.000 €" },
@@ -142,33 +122,21 @@ const Finanzierung = () => {
             </p>
           </div>
 
-          {/* FAQ Bereich */}
+          {/* FAQ */}
           <div className="max-w-3xl mx-auto mt-16">
-            <h3 className="font-heading font-bold text-xl mb-6 text-center">Häufige Fragen zur Finanzierung</h3>
+            <h2 className="font-heading font-bold text-xl mb-6 text-center">Häufige Fragen zur Arbeitsbühnen-Finanzierung</h2>
             <div className="space-y-4">
               {[
-                {
-                  q: "Welche Voraussetzungen gibt es für eine Finanzierung?",
-                  a: "Als B2B-Partner benötigen wir einen Handelsregistereintrag oder Gewerbeschein, die letzten zwei Jahresabschlüsse und eine positive Bonität."
-                },
-                {
-                  q: "Kann ich die Laufzeit individuell anpassen?",
-                  a: "Ja, neben den Standardlaufzeiten können wir bei vielen Finanzierungspartnern auch individuelle Laufzeiten vereinbaren."
-                },
-                {
-                  q: "Was passiert am Ende der Laufzeit?",
-                  a: "Bei einer Ballonfinanzierung zahlen Sie die Schlussrate. Alternativ kann diese refinanziert oder die Maschine zurückgegeben werden."
-                },
-                {
-                  q: "Sind Sondertilgungen möglich?",
-                  a: "Je nach Finanzierungspartner sind Sondertilgungen möglich. Details besprechen wir gerne persönlich mit Ihnen."
-                }
+                { q: "Welche Voraussetzungen gibt es für eine Finanzierung?", a: "Als B2B-Partner benötigen wir einen Handelsregistereintrag oder Gewerbeschein, die letzten zwei Jahresabschlüsse und eine positive Bonität." },
+                { q: "Kann ich die Laufzeit individuell anpassen?", a: "Ja, neben den Standardlaufzeiten können wir bei vielen Finanzierungspartnern auch individuelle Laufzeiten vereinbaren." },
+                { q: "Welche Arbeitsbühnen kann ich finanzieren?", a: "Alle Zoomlion Arbeitsbühnen – Scherenarbeitsbühnen, Teleskopbühnen und Gelenkbühnen. Auch unsere Hot Deal Angebote sind finanzierbar." },
+                { q: "Sind Sondertilgungen möglich?", a: "Je nach Finanzierungspartner sind Sondertilgungen möglich. Details besprechen wir gerne persönlich mit Ihnen." }
               ].map((faq, index) => (
                 <div key={index} className="p-4 rounded-lg border bg-card">
                   <div className="flex gap-3">
                     <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-medium">{faq.q}</h4>
+                      <h3 className="font-medium">{faq.q}</h3>
                       <p className="text-sm text-muted-foreground mt-1">{faq.a}</p>
                     </div>
                   </div>
@@ -179,17 +147,12 @@ const Finanzierung = () => {
         </div>
       </section>
 
-      {/* Inquiry Modal mit Finanzierungsdaten */}
       <InquiryModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         type="kontakt"
         filters={financingData ? {
-          finanzierung: `Netto: ${formatCurrency(financingData.netPurchasePrice)}, ` +
-            `Anzahlung: ${financingData.downPaymentPercent}%, ` +
-            `Laufzeit: ${financingData.termMonths} Monate, ` +
-            `Schlussrate: ${financingData.balloonPercent}%, ` +
-            `Rate ca.: ${formatCurrency(financingData.monthlyRate)}`
+          finanzierung: `Netto: ${formatCurrency(financingData.netPurchasePrice)}, Anzahlung: ${financingData.downPaymentPercent}%, Laufzeit: ${financingData.termMonths} Monate, Schlussrate: ${financingData.balloonPercent}%, Rate ca.: ${formatCurrency(financingData.monthlyRate)}`
         } : undefined}
       />
     </Layout>
