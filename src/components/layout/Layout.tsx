@@ -1,6 +1,7 @@
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { CTABar } from "../shared/CTABar";
+import { CrossSellBanner } from "../shared/CrossSellBanner";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ export function Layout({ children, showCTABar = true }: LayoutProps) {
       <main className="flex-1">{children}</main>
       {showCTABar && <CTABar />}
       <Footer />
+      <CrossSellBanner />
     </div>
   );
 }
